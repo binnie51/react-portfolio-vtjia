@@ -1,190 +1,94 @@
 ## Your Task
 
-Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
+Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
 
-This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end. 
+Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies. 
 
-To complete the assignment, you’ll need to do the following:
+You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
 
-1. Set up an Apollo Server to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
-
-2. Modify the existing authentication middleware so that it works in the context of a GraphQL API.
-
-3. Create an Apollo Provider so that requests can communicate with an Apollo Server.
-
-4. Deploy your application to Heroku with a MongoDB database using MongoDB Atlas. Use the [Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) walkthrough for instructions.
-
+**Important:** Be sure to push your codebase to the default branch in GitHub -- NOT your built and deployed code. Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
 
 ## User Story
 
 ```md
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
 ```
-
 
 ## Acceptance Criteria
 
 ```md
-GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
-
 
 ## Mock-Up
 
-Let's start by revisiting the web application's appearance and functionality.
+The following animation shows the web application's appearance and functionality:
 
-As you can see in the following animation, a user can type a search term (in this case, "star wars") in a search box and the results appear:
-
-![Animation shows "star wars" typed into a search box and books about Star Wars appearing as results.](./Assets/21-mern-homework-demo-01.gif)
-
-The user can save books by clicking "Save This Book!" under each search result, as shown in the following animation:
-
-![Animation shows user clicking "Save This Book!" button to save books that appear in search results. The button label changes to "Book Already Saved" after it is clicked and the book is saved.](./Assets/21-mern-homework-demo-02.gif)
-
-A user can view their saved books on a separate page, as shown in the following animation:
-
-![The Viewing Lernantino's Books page shows the books that the user Lernaninto has saved.](./Assets/21-mern-homework-demo-03.gif)
-
+![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./Assets/20-react-homework-demo-01.gif)
 
 ## Getting Started
 
-In order for this application to use a GraphQL API, you’ll need to refactor the API to use GraphQL on the back end and add some functionality to the front end. The following sections contain details about the files you’ll need to modify on the back end and the front end.
+You’ll use `create-react-app` to build your portfolio, which will include the following:
 
-**Important**: Make sure to study the application before building upon it. Better yet, start by making a copy of it. It's already a working application&mdash;you're converting it from RESTful API practices to a GraphQL API.
+* A single `Header` component that appears on multiple pages
 
-### Back-End Specifications
+* A single `Navigation` component within the header that will be used to conditionally render the different sections of your portfolio
 
-You’ll need to complete the following tasks in each of these back-end files:
+* A single `Project` component that will be used multiple times in the Portfolio section
 
-* `auth.js`: Update the auth middleware function to work with the GraphQL API.
+* A single `Footer` component that appears on multiple pages
 
-* `server.js`: Implement the Apollo Server and apply it to the Express server as middleware.
+**Note:** Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
 
-* `Schemas` directory:
+### Projects
 
-	* `index.js`: Export your typeDefs and resolvers.
+For each project that is featured in your portfolio, include the following:
 
-	* `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
+* An image of the deployed application (either a short animated GIF or screenshot)
 
-		**Hint**: Use the functionality in the `user-controller.js` as a guide.
+* The title of the project
 
-	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
+* A link to the deployed application
 
-		* `Query` type:
+* A link to the corresponding GitHub repository
 
-			* `me`: Which returns a `User` type.
-		
-		* `Mutation` type:
+### Design
 
-			* `login`: Accepts an email and password as parameters; returns an `Auth` type.
+As with the previous portfolio homework, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
 
-			* `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
+* Use mobile-first design.
 
-			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
+* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
 
-			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
-			
-		* `User` type:
+* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
 
-			* `_id`
-
-			* `username`
-
-			* `email`
-
-			* `bookCount`
-
-			* `savedBooks` (This will be an array of the `Book` type.)
-
-		* `Book` type:
-
-			* `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.)
-
-			* `authors` (An array of strings, as there may be more than one author.)
-
-			* `description`
-
-			* `title`
-
-			* `image`
-
-			* `link`
-
-		* `Auth` type:
-
-			* `token`
-
-			* `user` (References the `User` type.)
-
-
-### Front-End Specifications
-
-You'll need to create the following front-end files:
-
-* `queries.js`: This will hold the query `GET_ME`, which will execute the `me` query set up using Apollo Server.
-
-* `mutations.js`:
-
-	* `LOGIN_USER` will execute the `loginUser` mutation set up using Apollo Server.
-
-	* `ADD_USER` will execute the `addUser` mutation.
-
-	* `SAVE_BOOK` will execute the `saveBook` mutation.
-
-	* `REMOVE_BOOK` will execute the `removeBook` mutation.
-
-Additionally, you’ll need to complete the following tasks in each of these front-end files:
-
-* `App.js`: Create an Apollo Provider to make every request work with the Apollo Server.
-	
-* `SearchBooks.js`:
-
-	* Use the Apollo `useMutation()` Hook to execute the `SAVE_BOOK` mutation in the `handleSaveBook()` function instead of the `saveBook()` function imported from the `API` file.
-
-	* Make sure you keep the logic for saving the book's ID to state in the `try...catch` block! 
-
-* `SavedBooks.js`:
-
-	* Remove the `useEffect()` Hook that sets the state for `UserData`.
-
-	* Instead, use the `useQuery()` Hook to execute the `GET_ME` query on load and save it to a variable named `userData`.
-
-	* Use the `useMutation()` Hook to execute the `REMOVE_BOOK` mutation in the `handleDeleteBook()` function instead of the `deleteBook()` function that's imported from `API` file. (Make sure you keep the `removeBookId()` function in place!)
-
-* `SignupForm.js`: Replace the `addUser()` functionality imported from the `API` file with the `ADD_USER` mutation functionality.
-
-* `LoginForm.js`: Replace the `loginUser()` functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
-
+* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
 
 ## Grading Requirements
 
@@ -204,18 +108,15 @@ This homework is graded based on the following criteria:
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
-	* Has an Apollo Server that uses GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
+    * Application must use React to render content.
 
-	* Use an Apollo Server and apply it to the Express.js server as middleware.
+    * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
 
-	* Include schema settings for resolvers and typeDefs as outlined in the homework instructions.
+    * Application has a single `Project` component that’s used multiple times in the Portfolio section.
 
-	* Modify the existing authentication middleware to work in the context of a GraphQL API.
+    * Application has a single `Footer` component that appears on multiple pages.
 
-	* Use an Apollo Provider so that the application can communicate with the Apollo Server.
-
-	* Application must be deployed to Heroku.
-
+    * Application must be deployed to GitHub Pages.
 
 ### Deployment: 32%
 
@@ -227,15 +128,13 @@ This homework is graded based on the following criteria:
 
 * GitHub repository contains application code.
 
-
 ### Application Quality: 15%
 
 * User experience is intuitive and easy to navigate.
 
 * User interface style is clean and polished.
 
-* Application resembles the mock-up functionality provided in the homework instructions.
-
+* Application uses a color scheme other than the default Bootstrap color palette.
 
 ### Repository Quality: 13%
 
@@ -247,8 +146,7 @@ This homework is graded based on the following criteria:
 
 * Repository contains multiple descriptive commit messages.
 
-* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
-
+* Repository contains high-quality README file with description, screenshot, and link to deployed application.
 
 ## Review
 
@@ -256,5 +154,7 @@ You are required to submit BOTH of the following for review:
 
 * The URL of the functional, deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* The URL of the GitHub repository, with a unique name and a README that describes the project.
 
+- - -
+© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
