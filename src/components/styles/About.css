@@ -1,0 +1,35 @@
+.about-container {
+    max-width: 1000px;
+    margin: 80px;
+    /* padding: 20px 50px; */
+    border: 1px solid var(--text-color);
+    position: relative;
+}
+
+.about-container::before,
+.about-container::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.about-container::before {
+    top: -20px;
+    left: -20px;
+    border-width: 3px 0 0 3px;
+}
+
+.about-container::after {
+    bottom: -20px;
+    right: -20px;
+    border-width: 0 3px 3px 0;
+}
+
+.about-container:hover::before,
+.about-container:hover::after {
+    width: 50%;
+    height: 50%;
+}
