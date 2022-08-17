@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/About.css';
+// import '../styles/About.css';
 
 export default function About() {
     return (
@@ -34,16 +34,16 @@ export default function About() {
                             <li className="list-item">
                                 <i class="fa fa-git"></i>
                             </li>
-                            <li class="list-item pt-3">
+                            <li className="list-item pt-3">
                                 <img src="./assets/mysql.png.jpg" alt="mysql logo" style="height: 40px;"></img>
                             </li>
-                            <li class="list-item pt-3">
+                            <li className="list-item pt-3">
                                 <img src="./assets/Tailwind_CSS.svg.png" alt="tailwindcss logo" style="height: 50px;"></img>
                             </li>
-                            <li class="list-item pt-3">
+                            <li className="list-item pt-3">
                                 <img src="./assets/express-js.png" alt="express.js logo" style="height: 50px;"></img>
                             </li>
-                            <li class="list-item">
+                            <li className="list-item">
                                 <i class="fa-brands fa-python"></i>
                             </li>
                             <li class="list-item">

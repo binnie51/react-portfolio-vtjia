@@ -13,20 +13,20 @@ export default function ContainerSite() {
 
     // Method to check the value of `currentPage`
     const renderPage = () => {
-        if (currentPage === 'Herp') {
-            return <Hero />
+        if (currentPage === 'Hero') {
+            return <Hero />;
         }
 
         if (currentPage === 'About') {
-            return <About />
+            return <About />;
         }
 
         if (currentPage === 'Portfolio') {
-            return <Portfolio />
+            return <Portfolio />;
         }
 
-        else {
-            return <Contact />
+        if (currentPage === 'Contact') {
+            return <Contact />;
         }
     };
 
