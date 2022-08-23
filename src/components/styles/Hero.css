@@ -7,7 +7,41 @@
     background-size: cover;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    transition: transform .75s;
-    position: relative; /* impoertant for hover animation! */
+    /* align-items: center; */
+
+    /* impoertant for hover animation! */
+    /* transition: transform .75s;
+    position: relative;  */
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.hero-text{
+    color: #070F22;
+}
+
+/* resume button animation */
+.myResumeBtn {
+    color: var(--bg-color);
+    border-radius: 20px;
+    padding: 1rem 1.50rem;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    transition:  color 1.5s;
+    /* width: 100%; */
+}
+
+.myResumeBtn:hover {
+    color: #AC976B;
 }
