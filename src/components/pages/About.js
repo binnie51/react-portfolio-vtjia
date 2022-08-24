@@ -2,18 +2,21 @@ import React from "react";
 import '../styles/About.css';
 
 import photo from '../../assets/profile-photo.png';
+import MySQL from '../../assets/mysql.png.jpg';
+import tailwind from '../../assets/tailwind.png';
+import express from '../../assets/express-js.png';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
     return (
-        <div className="container-fluid flex justify-center" id="about">
-            <div className="about-container px-10 py-10">
-                <h2 className="heading-about text-white text-end">About Myself</h2>
+        <div className="container-fluid flex justify-center" >
+            <div className="about-container px-16 py-16">
+                <h2 className="heading-about text-white text-center font-bold mb-4">About Myself</h2>
                 <div className="grid gap-10 md:grid-cols-2 pb-5">
                     <div className="overlay">
                         <div className="wrapper">
-                            <img src={photo} alt="Vincent's profile photo"></img>
+                            <img src={photo} ></img>
                         </div>
                     </div>
                     <div className="about-text text-white">
@@ -27,31 +30,7 @@ export default function About() {
                         <p className="tracking-wide pt-4">Skills I have acquired:</p>
                         <ul className="skills flex flex-wrap justify-center py-4 gap-7">
                             <li className="list-item">
-                                <i className="fa-brands fa-js"></i>
-                            </li>
-                            <li className="list-item">
-                                <i className="fa-brands fa-node"></i>
-                            </li>
-                            <li className="list-item">
-                                <i className="fa-brands fa-bootstrap"></i>
-                            </li>
-                            <li className="list-item">
-                                <i className="fa fa-git"></i>
-                            </li>
-                            <li className="list-item pt-3">
-                                <img src="./assets/mysql.png.jpg" alt="mysql logo" style="height: 40px;"></img>
-                            </li>
-                            <li className="list-item pt-3">
-                                <img src="./assets/Tailwind_CSS.svg.png" alt="tailwindcss logo" style="height: 50px;"></img>
-                            </li>
-                            <li className="list-item pt-3">
-                                <img src="./assets/express-js.png" alt="express.js logo" style="height: 50px;"></img>
-                            </li>
-                            <li className="list-item">
-                                <i className="fa-brands fa-python"></i>
-                            </li>
-                            <li className="list-item">
-                                <i className="fa-brands fa-java"></i>
+                                <i src={tailwind}></i>
                             </li>
                         </ul>
                     </div>

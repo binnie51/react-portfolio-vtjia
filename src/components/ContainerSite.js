@@ -9,7 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 export default function ContainerSite() {
-    const [currentPage, setCurrentPage] = useState('Hero');
+    const [currentPage, setCurrentPage] = useState('Home');
 
     // Method to check the value of `currentPage`
     const renderPage = () => {
@@ -35,7 +35,7 @@ export default function ContainerSite() {
     return (
         <div>
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+                {renderPage()}
             <Footer />
         </div>
     );

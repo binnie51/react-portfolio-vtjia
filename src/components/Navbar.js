@@ -11,55 +11,50 @@ function Navbar({ currentPage, handlePageChange }) {
         <div>
             <nav className="bg-gray-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                        <img
-                        className="logo h-8 w-8"
-                        src={logo}
-                        alt="Workflow"
-                        />
-                    </div>
-                    <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-4">
-                        <a
-                            href="#home"
-                            onClick={() => handlePageChange('Hero')}
-                            className="Hero hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Home
-                        </a>
-
-                        <a
-                            href="#about"
-                            onClick={() => handlePageChange('About')}
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            About
-                        </a>
-
-                        <a
-                            href="#portfolio"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Projects
-                        </a>
-
-                        <a
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Contact
-                        </a>
-
-                        {/* <a
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Reports
-                        </a> */}
+                    <div className="flex items-center justify-between h-16">
+                        <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                            <img
+                            className="logo h-8 w-8"
+                            src={logo}
+                            alt="Workflow"
+                            />
                         </div>
-                    </div>
+                        <div className="hidden md:block">
+                            <div className="ml-10 flex items-baseline space-x-4">
+                                <a
+                                    href="#home"
+                                    onClick={() => handlePageChange('Hero')}
+                                    className="Hero hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Home
+                                </a>
+
+                                <a
+                                    href="#about"
+                                    onClick={() => handlePageChange('About')}
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    About
+                                </a>
+
+                                <a
+                                    href="#portfolio"
+                                    onClick={() => handlePageChange('Portfolio')}
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Projects
+                                </a>
+
+                                <a
+                                    href="#contact"
+                                    onClick={() => handlePageChange('Contact')}
+                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div className="-mr-2 flex md:hidden">
                     <button
@@ -119,42 +114,35 @@ function Navbar({ currentPage, handlePageChange }) {
                 >
                 {(ref) => (
                     <div className="md:hidden" id="mobile-menu">
-                    <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a
-                        href="/"
-                        className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                        >
-                        Home
-                        </a>
+                        <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                            <a
+                            href="/"
+                            className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                            >
+                            Home
+                            </a>
 
-                        <a
-                        href="/about"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        >
-                        About
-                        </a>
+                            <a
+                            href="/about"
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            >
+                            About
+                            </a>
 
-                        <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        >
-                        Projects
-                        </a>
+                            <a
+                            href="#"
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            >
+                            Projects
+                            </a>
 
-                        <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        >
-                        Contacts
-                        </a>
-
-                        {/* <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        >
-                        Reports
-                        </a> */}
-                    </div>
+                            <a
+                            href="#"
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            >
+                            Contacts
+                            </a>
+                        </div>
                     </div>
                 )}
                 </Transition>

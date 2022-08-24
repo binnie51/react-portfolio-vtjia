@@ -8,7 +8,7 @@ function Hero() {
         <div>
             <header className="container-fluid flex flex-wrap justify-center">
                 <div className="hero-image grid grid-rows-2">
-                    <div className="hero-text m-10 px-4 md:px-0">
+                    <div className="hero-text m-10 px-5">
                         <div>
                             <h1 className="font-black">
                                 Vincent Tjia

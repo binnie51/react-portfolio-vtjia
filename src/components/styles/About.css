@@ -2,7 +2,7 @@
     max-width: 1000px;
     margin: 80px;
     /* padding: 20px 50px; */
-    border: 1px solid var(--text-color);
+    border: 1px solid whitesmoke;
     position: relative;
 }
 
@@ -32,4 +32,67 @@
 .about-container:hover::after {
     width: 50%;
     height: 50%;
+}
+
+/* Styling 'Get to know me!' header text  */
+.heading-about {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: .1rem;
+}
+
+.heading-about::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 20px;
+    width: 240px;
+    height: 1px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+/* profile photo styling */
+.overlay .wrapper {
+    height: auto;
+    position: relative;
+    background-color: #6c6155;
+}
+
+.overlay .wrapper img {
+    mix-blend-mode: multiply;
+    filter: grayscale(50%) contrast(1);
+    height: fit-content;
+}
+
+/* skills icons */
+.skills {
+    font-size: 50px;
+}
+
+.work-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: .1rem;
+}
+
+.work-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 500px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: white;
 }
