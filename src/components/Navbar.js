@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-// import { Menu, XIcon } from "@heroicons/react/outline";
 import './styles/Navbar.css';
+
 import { Transition } from "@headlessui/react";
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -23,21 +23,23 @@ function Navbar() {
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
                         <a
-                            href="#"
-                            className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                            href="#home"
+                            onClick={() => handlePageChange('Hero')}
+                            className="Hero hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                         >
                             Home
                         </a>
 
                         <a
-                            href="#"
+                            href="#about"
+                            onClick={() => handlePageChange('About')}
                             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                         >
                             About
                         </a>
 
                         <a
-                            href="#"
+                            href="#portfolio"
                             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                         >
                             Projects

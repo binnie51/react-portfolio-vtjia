@@ -1,5 +1,9 @@
 import React from "react";
-// import '../styles/About.css';
+import '../styles/About.css';
+
+import photo from '../../assets/profile-photo.png';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
     return (
@@ -9,7 +13,7 @@ export default function About() {
                 <div className="grid gap-10 md:grid-cols-2 pb-5">
                     <div className="overlay">
                         <div className="wrapper">
-                            <img src="./assets/profile-photo.png" alt="Vincent's profile photo"></img>
+                            <img src={photo} alt="Vincent's profile photo"></img>
                         </div>
                     </div>
                     <div className="about-text text-white">
@@ -26,13 +30,13 @@ export default function About() {
                                 <i className="fa-brands fa-js"></i>
                             </li>
                             <li className="list-item">
-                                <i class="fa-brands fa-node"></i>
+                                <i className="fa-brands fa-node"></i>
                             </li>
                             <li className="list-item">
-                                <i class="fa-brands fa-bootstrap"></i>
+                                <i className="fa-brands fa-bootstrap"></i>
                             </li>
                             <li className="list-item">
-                                <i class="fa fa-git"></i>
+                                <i className="fa fa-git"></i>
                             </li>
                             <li className="list-item pt-3">
                                 <img src="./assets/mysql.png.jpg" alt="mysql logo" style="height: 40px;"></img>
@@ -44,10 +48,10 @@ export default function About() {
                                 <img src="./assets/express-js.png" alt="express.js logo" style="height: 50px;"></img>
                             </li>
                             <li className="list-item">
-                                <i class="fa-brands fa-python"></i>
+                                <i className="fa-brands fa-python"></i>
                             </li>
-                            <li class="list-item">
-                                <i class="fa-brands fa-java"></i>
+                            <li className="list-item">
+                                <i className="fa-brands fa-java"></i>
                             </li>
                         </ul>
                     </div>
