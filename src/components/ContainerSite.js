@@ -9,7 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 export default function ContainerSite() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('Portfolio');
 
     // Method to check the value of `currentPage`
     const renderPage = () => {

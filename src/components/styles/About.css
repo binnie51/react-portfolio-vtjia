@@ -1,5 +1,5 @@
 .about-container {
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 80px;
     /* padding: 20px 50px; */
     border: 1px solid whitesmoke;
@@ -51,7 +51,7 @@
     display: block;
     position: relative;
     top: 20px;
-    width: 240px;
+    width: 290px;
     height: 1px;
     margin-right: 10px;
     background-color: white;
@@ -61,14 +61,17 @@
 .overlay .wrapper {
     height: auto;
     position: relative;
-    background-color: #6c6155;
+    /* background-color: #6c6155; */
 }
 
 .overlay .wrapper img {
-    mix-blend-mode: multiply;
-    filter: grayscale(50%) contrast(1);
-    height: fit-content;
+    filter: grayscale(30%) contrast(1);
+    /* height: fit-content; */
 }
+
+/* .grapic-box {
+
+} */
 
 /* skills icons */
 .skills {
