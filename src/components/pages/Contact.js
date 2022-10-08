@@ -1,11 +1,10 @@
-import React from "react";
-
+// icons
 import { FaFacebookSquare, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 
 function Contact() {
     return (
         <section className="container-fluid pb-40" id="contact">
-            <div className=" grid grid-cols-1 text-white text-center">
+            <div className=" grid grid-cols-1 text-white text-center mt-20">
                 <h2 className="contact-header font-bold">How to Reach Me?</h2>
                 <p className="">
                     Please click the button below for inquiries and job opportunities. 

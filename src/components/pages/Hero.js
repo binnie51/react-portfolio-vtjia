@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/Hero.css';
 
 import resume from '../../assets/Vincent Tjia Resume.pdf';
@@ -19,14 +18,14 @@ function Hero() {
                                 Web Developer, Designer
                             </h2>
                             {/* resume */}
-                            {/* <div className="font-medium mt-10">
+                            <div className="font-medium mt-10">
                                 <a className="myResumeBtn bg-amber-600 hover:bg-gray-900 hover:" 
                                     href={resume}
                                     target="_blank" 
                                     rel="noreferrer">
                                         View my resume
                                 </a>
-                            </div> */}
+                            </div>
                         </div>
                         
                     </div>

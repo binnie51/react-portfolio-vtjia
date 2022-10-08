@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/About.css';
 
 import photo from '../../assets/IMG05021.jpg';
@@ -12,13 +11,13 @@ export default function About() {
     return (
         <div className="container-fluid flex justify-center" >
             <div className="about-container px-16 py-16">
-                <h2 className="heading-about text-white text-center font-bold mb-4">About Me</h2>
+                <h2 className="heading-about text-center font-bold mb-4">About Me</h2>
                 <div className="grid gap-10 lg:grid-cols-2 md:grid-cols-1 pb-5">
                     <div className="overlay">
                         <div className="wrapper">
                             <img src={photo} ></img>
                         </div>
-                        <p className="text-white text-end">Photo by Hansel Tan.</p>
+                        <p className="text-end">Photo by Hansel Tan.</p>
                     </div>
                     <div className="about-text text-white">
                         <p className="tracking-wide">
