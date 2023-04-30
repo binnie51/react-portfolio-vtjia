@@ -1,10 +1,11 @@
 import "../styles/Portfolio.css"
-// all the images
+// sample images
 import codeOp from '../../assets/portfolio/codeop_sc.png';
 import rentMyRide from '../../assets/portfolio/rentmyride.PNG';
 import weather from '../../assets/portfolio/weather-1.PNG';
 import movie from '../../assets/portfolio/movie.PNG';
 import jsQuiz from '../../assets/portfolio/quiz.PNG';
+import techBlog from '../../assets/portfolio/blog_tech.PNG'
 
 // icons
 import { FaGithub, FaLink } from 'react-icons/fa';
@@ -48,8 +49,16 @@ function Portfolio() {
             title: 'Code Quiz',
             alt: 'Code Quiz thumbnail',
             deployLink:'https://binnie51.github.io/coding-quiz-assessment/',
-            githubLink: 'ttps://github.com/binnie51/coding-quiz-assessment.git',
+            githubLink: 'https://github.com/binnie51/coding-quiz-assessment.git',
             description: 'A quiz game using simple logics to initialize time, deduct time, and save scores in localStorage.'
+        },
+        {
+            image: techBlog,
+            title: 'Tech Blog',
+            alt: 'Code Quiz thumbnail',
+            deployLink:'https://techblog-v300.herokuapp.com/',
+            githubLink: 'https://github.com/binnie51/mvc-tech-blog.git',
+            description: 'A blog like site using MVC model.'
         },
     ]
     

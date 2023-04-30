@@ -1,8 +1,6 @@
 import '../styles/About.css';
 
 import photo from '../../assets/IMG05021.jpg';
-// import MySQL from '../../assets/mysql.jpg';
-// import express from '../../assets/express-js.png';
 import { DiJavascript1, DiReact, DiJava } from 'react-icons/di';
 import { FaNode, FaBootstrap, FaGitSquare } from 'react-icons/fa';
 import { SiTailwindcss, SiMysql, SiPython, SiMongodb } from 'react-icons/si';
@@ -21,12 +19,11 @@ export default function About() {
                     </div>
                     <div className="about-text text-white">
                         <p className="tracking-wide">
-                        A recent graduate from Upenn's coding bootcamp. I'm a full-stack web developer with backgrounds in art and design. 
-                            Growing up in Indonesia, a tech career wasn't the path I see myself in due to the lack of exposure to advance technologies and the internet.                     
-                            Hence, I was in pursuit of artistic career due to my love of Japanese manga and animation.
-                            Eventually, fate brought me elsewhere and I began diving into programming, as I could utilize my artistic background
-                            to solve problems and produce creative products on the web.<br/><br/>
-                            Fun fact: I can also speak Indonesian and Japanese. I'm on my way to become a quartelingual, that being Mandarin Chinese.
+                        Graduated from Upenn's full-stack coding bootcamp. I'm a front end focused web developer with backgrounds in art and design. I also design and illustrating on the side.
+                            Growing up in Indonesia, a career in tech wasn't a realistic path personally due to lack of exposure around the internet and advance gadgets.                     
+                            Hence, I indulge myself in image making inspired by Japanese media.
+                            Eventually, I began diving into programming on the later life as I could utilize my artistic background
+                            to solve problems and produce creative products on the web.
                         </p>
                         <div className="m-8" style={{backgroundColor:"white", height: "1px"}}></div>
                         <p className="tracking-wide pt-1 text-center">Skills I have acquired:</p>
