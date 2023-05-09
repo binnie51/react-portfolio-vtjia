@@ -10,7 +10,7 @@ import techBlog from '../../assets/portfolio/blog_tech.PNG'
 // icons
 import { FaGithub, FaLink } from 'react-icons/fa';
 
-function Portfolio() {
+export default function Portfolio() {
     const portfolios = [
         {
             image: codeOp,
@@ -104,5 +104,3 @@ function Portfolio() {
         </div>
     )
 }
-
-export default Portfolio;

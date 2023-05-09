@@ -3,18 +3,18 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import Hero from './pages/Hero';
+import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 export default function ContainerSite() {
-    const [currentPage, setCurrentPage] = useState('Hero');
+    const [currentPage, setCurrentPage] = useState('Home');
 
     // Method to check the value of `currentPage`
     const renderPage = () => {
-        if (currentPage === 'Hero') {
-            return <Hero />;
+        if (currentPage === 'Home') {
+            return <Home />;
         }
 
         if (currentPage === 'About') {

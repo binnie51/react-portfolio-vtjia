@@ -1,14 +1,14 @@
-import '../styles/Hero.css';
+import '../styles/Home.css';
 import image from '../../assets/illust_top.png';
 import resume from '../../assets/Vincent Tjia Resume.pdf';
 import { useCallback, useEffect, useState } from 'react';
-import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
+import { FaGithubSquare, FaMailBulk, FaInstagramSquare } from 'react-icons/fa';
 
-function Hero() {
+export default function Hero() {
     const greetingsArray = [
-        "Hello",
-        "Halo",
-        "こんにちは",
+        "Welcome",
+        "Selamat datang",
+        "ようこそ",
         "欢迎"
     ];
 
@@ -16,7 +16,7 @@ function Hero() {
         ""
     ]
 
-    const [greet, setGreet] = useState("Hello");
+    const [greet, setGreet] = useState("Welcome");
     const [title, setTitle] = useState("Web Developer");
     
     const shuffleGreet = useCallback(() => {
@@ -47,35 +47,45 @@ function Hero() {
                         <div className="bg-amber-600" style={{height : 2.5, width : '30%' }}></div>
                         <h2><strong className='text-'>Web Developer</strong>, Designer, Illustrator</h2>
                         <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-                            An amateur developer who provides services for digital programming and design content for business and organization needs.
-                            Also a part-time illustrator and graphic designer on the side. 
+                            An amateur developer who provides services for digital programming and design content catering toward business and organization needs.
+                            Also, an illustrator and graphic designer on the side. 
                         </p>
-                        <div className="font-medium mt-8 flex flex-wrap gap-4 text-center">
+                        <div className="font-medium mt-8 flex flex-wrap justify-around gap-4 text-center">
                             <a className="myResumeBtn block w-full rounded px-12 py-3 bg-amber-600 hover:bg-gray-900 sm:w-auto duration-150 ease-in-out" 
                                 href={resume}
                                 target="_blank" 
                                 rel="noreferrer">
                                     My Resume
                             </a>
+                            <a className="myResumeBtn block w-full rounded px-12 py-3 bg-amber-600 hover:bg-gray-900 sm:w-auto duration-150 ease-in-out" 
+                                href='www.linkedin.com/in/
+                                vincent-tjia-5ab2751b8'
+                                target="_blank" 
+                                rel="noreferrer">
+                                    My LinkedIn
+                            </a>
                         </div>
                         <div className='flex justify-center mt-10 text-4xl space-x-8'>
-                                <div>
+                            <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
+                                <a href='https://github.com/binnie51'
+                                target="_blank" >
                                     <FaGithubSquare />
-                                </div>
-                                <div>
+                               </a>
+                            </div>
+                            <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
+                            <a href=''
+                            target="_blank" >
                                     <FaInstagramSquare />
-                                </div>
-                                <div>
-                                    <FaLinkedin />
-                                </div>
+                            </a>
+                            </div>
+                            <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
+                                <a href='mailto:vtjia51@gmail.com'
+                                target="_blank" >
+                                    <FaMailBulk />
+                                </a>
+                            </div>
                             </div>   
-                            {/* <div className='flex flex-row justify-center'>
-                                
-                            </div> */}
                         
-                        {/* <div className='justify-self-end self-end text-white bg-black'>
-                            <p>&copy; Vincent Tjia</p>
-                        </div> */}
                     </div>  
 
                 </div>
@@ -85,5 +95,3 @@ function Hero() {
         </div>
     )
 }
-
-export default Hero;
