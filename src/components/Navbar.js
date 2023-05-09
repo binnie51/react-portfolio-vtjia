@@ -20,7 +20,7 @@ function Navbar({ currentPage, handlePageChange }) {
                             alt="Workflow"
                             />
                         </div>
-                        <div className="hidden md:block">
+                        <div className="hidden md:block uppercase">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 <a
                                     href="#home"
