@@ -21,7 +21,6 @@ export default function About() {
                         <p className="tracking-wide">
                         Graduated from Upenn's full-stack coding bootcamp. I'm a front end focused web developer with backgrounds in art and design. I also design and illustrating on the side.
                             Growing up in Indonesia, a career in tech wasn't a realistic path personally due to lack of exposure around the internet and advance gadgets.                     
-                            Hence, I indulge myself in image making inspired by Japanese media.
                             Eventually, I began diving into programming on the later life as I could utilize my artistic background
                             to solve problems and produce creative products on the web.
                         </p>

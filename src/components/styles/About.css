@@ -1,7 +1,6 @@
 .about-container {
     max-width: 1024px;
     margin: 80px;
-    /* padding: 20px 50px; */
     border: 1px solid whitesmoke;
     position: relative;
 }
@@ -69,16 +68,12 @@
     /* height: fit-content; */
 }
 
-/* .grapic-box {
-
-} */
-
 /* skills icons */
 .skills {
     font-size: 50px;
 }
 
-.work-header {
+/* .work-header {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -98,4 +93,4 @@
     height: 1px;
     margin-left: 20px;
     background-color: white;
-}
+} */

@@ -13,7 +13,7 @@
     letter-spacing: .1rem;
 }
 
-/* .work-header::after {
+.work-header::after {
     content: "";
     display: block;
     position: relative;
@@ -22,7 +22,7 @@
     height: 1px;
     margin-left: 20px;
     background-color: var(--text-color);
-} */
+}
 
 .icons {
     font-size: 30px;

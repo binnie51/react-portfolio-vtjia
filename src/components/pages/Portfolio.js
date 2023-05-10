@@ -63,13 +63,13 @@ export default function Portfolio() {
     ]
     
     return (
-        <div className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20 pb-10" id="portfolio">
+        <div className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20 pb-10" id="portfolios">
             <section className="w-full">
-                <h2 className="work-header font-bold">Portfolio</h2>
+                <h1 className="work-header font-bold">Portfolio</h1>
                 <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 place-content-center">
                     
                     {/* porfolio cards */}
-                    {portfolios.map(portfolio => {
+                    {portfolios.map((portfolio) => {
                         return (
                             <div className="bg-slate-500 h-80 w-64 rounded-md mb-6">
                                 <div className="flex justify-center items-center leading-none">

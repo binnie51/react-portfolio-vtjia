@@ -4,7 +4,7 @@ import resume from '../../assets/Vincent Tjia Resume.pdf';
 import { useCallback, useEffect, useState } from 'react';
 import { FaGithubSquare, FaMailBulk, FaInstagramSquare } from 'react-icons/fa';
 
-export default function Hero() {
+export default function Home() {
     const greetingsArray = [
         "Welcome",
         "Selamat datang",
@@ -12,12 +12,14 @@ export default function Hero() {
         "欢迎"
     ];
 
-    const titleArray = [
-        ""
-    ]
+    // const titleArray = [
+    //     "Web Developer",
+    //     "Front End",
+    //     ""
+    // ]
 
     const [greet, setGreet] = useState("Welcome");
-    const [title, setTitle] = useState("Web Developer");
+    // const [title, setTitle] = useState("Web Developer");
     
     const shuffleGreet = useCallback(() => {
         const i = Math.floor(Math.random() * greetingsArray.length);
@@ -36,8 +38,6 @@ export default function Hero() {
                     style={{ 
                         backgroundImage: `url(${image})`,
                          }}>
-                {/* <div className="absolute inset-0 bg-white/50 sm:bg-transparent sm:from-white/95 sm:to-white/100 ltr:sm:bg-gradient-to-r"
-                ></div> */}
 
                 <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
                     <div className='max-w-xl text-start ltr:sm:text-left rtl:sm:text-right rounded px-6 py-12 md:py-16 md:px-12 hero-text'
@@ -47,7 +47,7 @@ export default function Hero() {
                         <div className="bg-amber-600" style={{height : 2.5, width : '30%' }}></div>
                         <h2><strong className='text-'>Web Developer</strong>, Designer, Illustrator</h2>
                         <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-                            An amateur developer who provides services for digital programming and design content catering toward business and organization needs.
+                            An amateur developer who provides services for web design and content catering toward business and organization needs.
                             Also, an illustrator and graphic designer on the side. 
                         </p>
                         <div className="font-medium mt-8 flex flex-wrap justify-around gap-4 text-center">
@@ -58,10 +58,9 @@ export default function Hero() {
                                     My Resume
                             </a>
                             <a className="myResumeBtn block w-full rounded px-12 py-3 bg-amber-600 hover:bg-gray-900 sm:w-auto duration-150 ease-in-out" 
-                                href='www.linkedin.com/in/
-                                vincent-tjia-5ab2751b8'
+                                href='https://linkedin.com/in/vincent-tjia-5ab2751b8'
                                 target="_blank" 
-                                rel="noreferrer">
+                                >
                                     My LinkedIn
                             </a>
                         </div>
@@ -73,8 +72,8 @@ export default function Hero() {
                                </a>
                             </div>
                             <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
-                            <a href=''
-                            target="_blank" >
+                            <a href='#'
+                             >
                                     <FaInstagramSquare />
                             </a>
                             </div>
