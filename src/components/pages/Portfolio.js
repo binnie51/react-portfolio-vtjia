@@ -11,6 +11,7 @@ import techBlog from '../../assets/portfolio/blog_tech.PNG'
 import { FaGithub, FaLink } from 'react-icons/fa';
 
 export default function Portfolio() {
+    // web portfolio object
     const portfolios = [
         {
             image: codeOp,
@@ -61,11 +62,25 @@ export default function Portfolio() {
             description: 'A blog like site using MVC model.'
         },
     ]
+    // illustrations object
+    const illustrations = [
+        {
+            image: '',
+            title: 'Brave Killer',
+            alt: 'visual of Brave Killer illustration',
+            description:'This is the piece that I have submitted to the Digimon Illustration Competition earlier this year based on their preselected Digimon and given prompt of ',
+            date: 'January 2023'
+        },
+    ]
+    // design object
+    const graphicDesigns = [
+        
+    ]
     
     return (
         <div className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20 pb-10" id="portfolios">
             <section className="w-full">
-                <h1 className="work-header font-bold">Portfolio</h1>
+                <h2 className="work-header font-bold">Portfolio</h2>
                 <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 place-content-center">
                     
                     {/* porfolio cards */}

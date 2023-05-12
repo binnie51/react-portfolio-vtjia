@@ -1,6 +1,6 @@
 import "../styles/Contact.css";
 // icons
-import { FaFacebookSquare, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -13,13 +13,27 @@ function Contact() {
       <div className="flex flex-wrap py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
           <p className="text-start mb-6">
-            Hiya! I am looking for either contract or full time opportunity for
-            dev job. I am also interested in freelance opportunities -
+            I am looking to fullfill a full time web or software
+            developer position. I am also interested in freelance opportunities -
             especially, where I get to help you boost your image and improve
             user experience while navigating your site. For any other inquiries
             such as commisioning me for design or illustratitive work(s), please
             don't hesitant to shoot me an email!
           </p>
+          <div className="flex justify-center mt-10 text-4xl space-x-8">
+            <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
+                    <a href='https://github.com/binnie51'
+                    target="_blank" >
+                        <FaGithubSquare />
+                    </a>
+            </div>
+                <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
+                <a href='https://linkedin.com/in/vincent-tjia-5ab2751b8'
+                    >
+                        <FaLinkedin />
+                </a>
+                </div>
+          </div>
         </div>
 
         <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
@@ -27,20 +41,9 @@ function Contact() {
             <div className="form-group mb-6">
               <input
                 type="text"
-                className="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                focus:border-blue-600 focus:outline-none"
                 id="exampleInput7"
                 placeholder="Name"
               />
@@ -48,43 +51,17 @@ function Contact() {
             <div className="form-group mb-6">
               <input
                 type="email"
-                className="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                focus:border-blue-600 focus:outline-none"
                 id="exampleInput8"
                 placeholder="Email address"
               />
             </div>
             <div className="form-group mb-6">
               <textarea
-                className="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      "
+                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
+                rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id="exampleFormControlTextarea13"
                 rows={3}
                 placeholder="Message"
@@ -93,24 +70,9 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="
-      w-full
-      px-6
-      py-2.5
-      bg-blue-600
-      text-white
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      shadow-md
-      hover:bg-blue-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
-      transition
-      duration-150
-      ease-in-out"
+              className="w-full px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg
+            focus:bg-amber-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150
+              ease-in-out"
             >
               Send
             </button>

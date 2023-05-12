@@ -12,14 +12,7 @@ export default function Home() {
         "欢迎"
     ];
 
-    // const titleArray = [
-    //     "Web Developer",
-    //     "Front End",
-    //     ""
-    // ]
-
     const [greet, setGreet] = useState("Welcome");
-    // const [title, setTitle] = useState("Web Developer");
     
     const shuffleGreet = useCallback(() => {
         const i = Math.floor(Math.random() * greetingsArray.length);
@@ -83,7 +76,7 @@ export default function Home() {
                                     <FaMailBulk />
                                 </a>
                             </div>
-                            </div>   
+                        </div>   
                         
                     </div>  
 
