@@ -12,6 +12,12 @@ export default function Home() {
         "欢迎"
     ];
 
+    // const titleArray = [
+    //     "Web Developer",
+    //     "Designer",
+    //     "Illustrator"
+    // ]
+
     const [greet, setGreet] = useState("Welcome");
     
     const shuffleGreet = useCallback(() => {

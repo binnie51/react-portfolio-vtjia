@@ -1,8 +1,34 @@
 import "../styles/Contact.css";
 // icons
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const formRef = useRef();
+  const [ doneSent, setDoneSent ] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // NOTE: don't forget to hide under .env file!!! 
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDoneSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="mb-32 pt-10 md:pt-14 text-white">
       <div className="text-center">
@@ -13,31 +39,29 @@ function Contact() {
       <div className="flex flex-wrap py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
           <p className="text-start mb-6">
-            I am looking to fullfill a full time web or software
-            developer position. I am also interested in freelance opportunities -
+            I am looking to fullfill a full time web or software developer
+            position. I am also interested in freelance opportunities -
             especially, where I get to help you boost your image and improve
             user experience while navigating your site. For any other inquiries
             such as commisioning me for design or illustratitive work(s), please
             don't hesitant to shoot me an email!
           </p>
           <div className="flex justify-center mt-10 text-4xl space-x-8">
-            <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
-                    <a href='https://github.com/binnie51'
-                    target="_blank" >
-                        <FaGithubSquare />
-                    </a>
+            <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600">
+              <a href="https://github.com/binnie51" target="_blank">
+                <FaGithubSquare />
+              </a>
             </div>
-                <div className='transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600'>
-                <a href='https://linkedin.com/in/vincent-tjia-5ab2751b8'
-                    >
-                        <FaLinkedin />
-                </a>
-                </div>
+            <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600">
+              <a href="https://linkedin.com/in/vincent-tjia-5ab2751b8">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-          <form>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <div className="form-group mb-6">
               <input
                 type="text"
@@ -46,16 +70,29 @@ function Contact() {
                 focus:border-blue-600 focus:outline-none"
                 id="exampleInput7"
                 placeholder="Name"
+                name="user_name"
               />
             </div>
             <div className="form-group mb-6">
               <input
-                type="email"
+                type="text"
                 className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
                 border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
                 focus:border-blue-600 focus:outline-none"
                 id="exampleInput8"
                 placeholder="Email address"
+                name="user_email"
+              />
+            </div>
+            <div className="form-group mb-6">
+              <input
+                type="text"
+                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                focus:border-blue-600 focus:outline-none"
+                id="exampleInput8"
+                placeholder="Subject"
+                name="subject_from_user"
               />
             </div>
             <div className="form-group mb-6">
@@ -63,8 +100,9 @@ function Contact() {
                 className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
                 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id="exampleFormControlTextarea13"
-                rows={3}
+                rows={5}
                 placeholder="Message"
+                name="message"
                 defaultValue={""}
               />
             </div>
@@ -76,6 +114,7 @@ function Contact() {
             >
               Send
             </button>
+            {doneSent && "Thank You for your email!"} 
           </form>
         </div>
       </div>
