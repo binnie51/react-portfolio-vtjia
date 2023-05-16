@@ -32,3 +32,12 @@
 .icons:hover {
     color: #4E4515;
 }
+
+.btnFilter span {
+    transform:translate(-101%);
+    transition: transform .2s ease-in;
+}
+
+.btnFilter:hover span {
+    transform: translateX(0);
+}
