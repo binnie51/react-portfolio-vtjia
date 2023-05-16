@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-
+// set components
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+// pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';

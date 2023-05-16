@@ -25,7 +25,7 @@ function Navbar({ currentPage, handlePageChange }) {
                   <a
                     href="#home"
                     onClick={() => handlePageChange("Home")}
-                    className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </a>
@@ -33,7 +33,7 @@ function Navbar({ currentPage, handlePageChange }) {
                   <a
                     href="#about"
                     onClick={() => handlePageChange("About")}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About
                   </a>
@@ -41,7 +41,7 @@ function Navbar({ currentPage, handlePageChange }) {
                   <a
                     href="#portfolio"
                     onClick={() => handlePageChange("Portfolio")}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Portfolio
                   </a>
@@ -49,7 +49,7 @@ function Navbar({ currentPage, handlePageChange }) {
                   <a
                     href="#contact"
                     onClick={() => handlePageChange("Contact")}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
                   </a>

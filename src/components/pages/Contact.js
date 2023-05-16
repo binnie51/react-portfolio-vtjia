@@ -1,16 +1,16 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 // icons
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
-function Contact() {
+export default function Contact() {
   const formRef = useRef();
   const [ doneSent, setDoneSent ] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // NOTE: don't forget to hide under .env file!!! 
+    
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -121,5 +121,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;
