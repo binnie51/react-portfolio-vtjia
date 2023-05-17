@@ -19,7 +19,7 @@
     position: relative;
     top: 0px;
     width: 500px;
-    height: 1px;
+    height: 3px;
     margin-left: 20px;
     background-color: var(--text-color);
 }
@@ -29,8 +29,15 @@
     color: #3E3556;
 }
 
-.icons:hover {
+/* .icons:hover {
     color: #4E4515;
+} */
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .btnFilter span {

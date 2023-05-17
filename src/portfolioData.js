@@ -58,14 +58,14 @@ const apps = [
       githubLink: "https://github.com/binnie51/mvc-tech-blog.git",
       description: "A blog like site using MVC model.",
     },
-    // {
-    //     type: "illustration",
-    //     image: '',
-    //     title: 'Brave Killer',
-    //     alt: 'visual of Brave Killer illustration',
-    //     description:'This is the piece that I have submitted to the Digimon Illustration Competition earlier this year based on their preselected Digimon and given prompt of ',
-    //     date: 'January 2023'
-    // }
+    {
+        type: "illustration",
+        image: '',
+        title: 'Brave Killer',
+        alt: 'visual of Brave Killer illustration',
+        description:'This is the piece that I have submitted to the Digimon Illustration Competition earlier this year based on their preselected Digimon and given prompt of ',
+        date: 'January 2023'
+    }
   ];
 
   {apps.map((app) => {

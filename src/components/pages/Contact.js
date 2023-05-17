@@ -6,11 +6,11 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   const formRef = useRef();
-  const [ doneSent, setDoneSent ] = useState(false);
+  const [doneSent, setDoneSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -48,12 +48,18 @@ export default function Contact() {
           </p>
           <div className="flex justify-center mt-10 text-4xl space-x-8">
             <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600">
-              <a href="https://github.com/binnie51" target="_blank">
+              <a 
+                href="https://github.com/binnie51" 
+                target="_blank"
+              >
                 <FaGithubSquare />
               </a>
             </div>
             <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600">
-              <a href="https://linkedin.com/in/vincent-tjia-5ab2751b8">
+              <a
+                href="https://linkedin.com/in/vincent-tjia-5ab2751b8"
+                target="_blank"
+              >
                 <FaLinkedin />
               </a>
             </div>
@@ -114,7 +120,7 @@ export default function Contact() {
             >
               Send
             </button>
-            {doneSent && "Thank You for your email!"} 
+            {doneSent && "Thank You for your email!"}
           </form>
         </div>
       </div>
