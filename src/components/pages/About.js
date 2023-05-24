@@ -1,7 +1,7 @@
 import "../styles/About.css";
 
 import photo from "../../assets/IMG05021.jpg";
-import { DiJavascript1, DiReact, DiJava } from "react-icons/di";
+import { DiJavascript1, DiReact } from "react-icons/di";
 import { FaNode, FaBootstrap, FaGitSquare } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiPython, SiMongodb } from "react-icons/si";
 
@@ -9,7 +9,9 @@ export default function About() {
   return (
     <div className="container-fluid flex justify-center">
       <div className="about-container px-16 py-16">
-        <h2 className="heading-about text-center font-bold mb-4">About Me</h2>
+        <h2 className="heading-about uppercase text-center font-bold mb-4">
+          About Me
+        </h2>
         <div className="grid gap-10 lg:grid-cols-2 md:grid-cols-1 pb-5">
           <div className="overlay">
             <div className="wrapper">
@@ -19,19 +21,22 @@ export default function About() {
           </div>
           <div className="about-text text-white">
             <p className="tracking-wide">
-              Graduated from Upenn's full-stack coding bootcamp. I'm a front end
-              focused web developer with backgrounds in art and design. I also
-              design and illustrating on the side. Growing up in Indonesia, a
-              career in tech wasn't a realistic path personally due to lack of
-              exposure around the internet and advance gadgets. Eventually, I
-              began diving into programming on the later life as I could utilize
-              my creative background to solve problems and produce creative
-              products on the web.
+              A comprehensive coding bootcamp graduate with prior experience in
+              graphic design and art. Exhibiting enthusiasm for technologies,
+              programming, analytics, and innovative endeavors. Demonstrates a
+              quick grasp of novel concepts and ideas, akin to acquiring fluency
+              in a second language. Presently seeking opportunities to apply
+              their development skills in order to fulfill business requirements
+              and achieve high-quality results. <br /> <br />
+              <span className="font-bold">Background:</span> <br />
+              Having been raised in Indonesia, pursuing a career in the tech
+              industry seemed unrealistic for me personally, mainly due to
+              limited exposure to the internet and advanced gadgets. However, as
+              time went on, I delved into programming and discovered that my
+              creative background could be utilized to solve problems and create
+              innovative products on the web.
             </p>
-            <div
-              className="m-8 bg-amber-600"
-              style={{ height: "1px" }}
-            ></div>
+            <div className="m-8 bg-amber-600" style={{ height: "1px" }}></div>
             <p className="tracking-wide pt-1 text-center">
               Skills I have acquired:
             </p>
@@ -57,9 +62,9 @@ export default function About() {
               <li className="list-item">
                 <SiPython />
               </li>
-              <li className="list-item">
+              {/* <li className="list-item">
                 <DiJava />
-              </li>
+              </li> */}
               <li className="list-item">
                 <FaGitSquare />
               </li>

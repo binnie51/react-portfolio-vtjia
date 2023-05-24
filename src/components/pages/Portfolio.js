@@ -1,15 +1,15 @@
-import "../styles/Portfolio.css";
-import { portfolios } from "../../portfolioData";
-
-// icons
-import { FaGithub, FaLink } from "react-icons/fa";
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-export default function Portfolio() {
-  // const [pageContent, setPageContent] = useState("App");
-  const [isOpen, setIsOpen] = useState(false); // open/close modals
+import "../styles/Portfolio.css";
+import Portfolios from "../../portfolioData";
 
+// icons
+import { FaGithub, FaLink } from "react-icons/fa";
+
+export default function Portfolio() {
+  const [portfolios, setPortfolios] = useState(Portfolios); // filter purpose, shows all types by default
+  const [isOpen, setIsOpen] = useState(false); // open/close modals
   // Note: have another state to store the data for modal to avoid opening all modals 
   // Only display specific data on the clicked card
   const [modalData, setModalData] = useState("");
@@ -18,7 +18,12 @@ export default function Portfolio() {
     setIsOpen(false);
   }
 
-  const filterContent = (portType) => {};
+  const filterContent = (portType) => {
+    const updatedPageContent = Portfolios.filter( (el) => {
+      return el.portType === portType;
+    });
+    setPortfolios(updatedPageContent);
+  }
 
   return (
     <div
@@ -31,7 +36,7 @@ export default function Portfolio() {
           <button
             className="relative btnFilter uppercase overflow-hidden text-white tracking-wider focus:border-b-2 focus:border-amber-600 font-medium rounded text-sm px-3 py-2.5"
             type="button"
-            onClick={() => filterContent("apps")}
+            onClick={() => filterContent("app")}
           >
             <span className="absolute inset-x-0 h-1 bottom-0 bg-amber-600"></span>
             Apps
@@ -56,7 +61,10 @@ export default function Portfolio() {
         <h2 className="work-header font-bold leading-normal">Portfolio</h2>
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-content-center">
           {/* portfolio list */}
+
+
           {portfolios.map((portfolio) => {
+            const { portType, image, alt, deployLink, githubLink, description } = portfolio;
             return (
               <div className="mb-4">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat rounded-lg">
