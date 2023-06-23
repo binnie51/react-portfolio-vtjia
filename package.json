@@ -19,7 +19,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.4.2",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -53,6 +52,7 @@
     "autoprefixer": "^9.8.8",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
+    "react-router-dom": "^6.13.0",
     "tailwindcss": "^3.1.8"
   }
 }

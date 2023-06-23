@@ -13,12 +13,14 @@ function Navbar({ currentPage, handlePageChange }) {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="logo h-8 w-8"
-                  src={logo}
-                  alt="Workflow"
-                  style={{ height: 60, width: 60 }}
-                />
+                <a href="/">
+                  <img
+                    className="logo h-8 w-8"
+                    src={logo}
+                    alt="Workflow"
+                    style={{ height: 60, width: 60 }}
+                  />
+                </a>
               </div>
               <div className="hidden md:block uppercase">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -116,14 +118,14 @@ function Navbar({ currentPage, handlePageChange }) {
             <div className="md:hidden uppercase" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  onClick={() => handlePageChange("Home")}
+                  onClick={() => { handlePageChange("Home"); setIsOpen(false); }}
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
 
                 <a
-                  onClick={() => handlePageChange("About")}
+                  onClick={() => { handlePageChange("About"); setIsOpen(false); }}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
@@ -131,7 +133,7 @@ function Navbar({ currentPage, handlePageChange }) {
 
                 <a
                   href="#"
-                  onClick={() => handlePageChange("Portfolio")}
+                  onClick={() => { handlePageChange("Portfolio"); setIsOpen(false); }}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Portfolio
@@ -139,7 +141,7 @@ function Navbar({ currentPage, handlePageChange }) {
 
                 <a
                   href="#"
-                  onClick={() => handlePageChange("Contact")}
+                  onClick={() => { handlePageChange("Contact"); setIsOpen(false); }}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contacts

@@ -3,7 +3,7 @@ import "../styles/About.css";
 import photo from "../../assets/IMG05021.jpg";
 import { DiJavascript1, DiReact } from "react-icons/di";
 import { FaNode, FaBootstrap, FaGitSquare } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiPython, SiMongodb } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiPython, SiMongodb, SiNextdotjs } from "react-icons/si";
 
 export default function About() {
   return (
@@ -62,9 +62,9 @@ export default function About() {
               <li className="list-item">
                 <SiPython />
               </li>
-              {/* <li className="list-item">
-                <DiJava />
-              </li> */}
+              <li className="list-item">
+                <SiNextdotjs />
+              </li>
               <li className="list-item">
                 <FaGitSquare />
               </li>

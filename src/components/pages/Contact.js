@@ -16,7 +16,7 @@ export default function Contact() {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         formRef.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -30,15 +30,15 @@ export default function Contact() {
   };
 
   return (
-    <section className="mb-32 pt-10 md:pt-14 text-white">
+    <section className="my-16 mx-5">
       <div className="text-center">
-        <h1 className="font-bold contact-header justify-center mb-6">
+        <h1 className="font-bold text-3xl contact-header justify-center uppercase mb-6">
           Contact Me
         </h1>
       </div>
       <div className="flex flex-wrap py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-          <p className="text-start mb-6">
+          <p className="text-start  tracking-wide mb-6">
             I am looking to fullfill a full time web or software developer
             position. I am also interested in freelance opportunities -
             especially, where I get to help you boost your image and improve
