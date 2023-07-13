@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/react-portfolio-vtjia/static/css/main.4664d73f.css",
-    "main.js": "/react-portfolio-vtjia/static/js/main.cd5cc739.js",
+    "main.css": "/react-portfolio-vtjia/static/css/main.ef1c12c6.css",
+    "main.js": "/react-portfolio-vtjia/static/js/main.1b095cf1.js",
     "static/media/IMG05021.jpg": "/react-portfolio-vtjia/static/media/IMG05021.5c04bc1dce405b31dde8.jpg",
-    "static/media/pg 2-4.png": "/react-portfolio-vtjia/static/media/pg 2-4.1519706c0990e8f2111f.png",
+    "static/media/Rei_Asuka.png": "/react-portfolio-vtjia/static/media/Rei_Asuka.1fd5d0baf1af6e5fe797.png",
+    "static/media/Untitled_Artwork.png": "/react-portfolio-vtjia/static/media/Untitled_Artwork.dd4c42c43345b0af3e26.png",
     "static/media/illust_top.png": "/react-portfolio-vtjia/static/media/illust_top.dd4c42c43345b0af3e26.png",
-    "static/media/pg 1, 5-6.png": "/react-portfolio-vtjia/static/media/pg 1, 5-6.c5db69a991da2ec2e954.png",
     "static/media/mockup_pampSQ1.png": "/react-portfolio-vtjia/static/media/mockup_pampSQ1.ce8b49099f9f4084c865.png",
     "static/media/Wargreymon.jpg": "/react-portfolio-vtjia/static/media/Wargreymon.c9cc71cd9b423eddf1de.jpg",
     "static/media/rentmyride.PNG": "/react-portfolio-vtjia/static/media/rentmyride.c6ccc7cd0ee145e50075.PNG",
     "static/media/movie.PNG": "/react-portfolio-vtjia/static/media/movie.9920b8d6fbe3a5ae7aa6.PNG",
     "static/media/codeop_sc.png": "/react-portfolio-vtjia/static/media/codeop_sc.8aff9bff288a35881943.png",
+    "static/media/Logocodeop.png": "/react-portfolio-vtjia/static/media/Logocodeop.879dae889b417559201f.png",
     "static/media/logo.png": "/react-portfolio-vtjia/static/media/logo.3a942ae563ef6e594b9b.png",
     "static/media/weather-1.PNG": "/react-portfolio-vtjia/static/media/weather-1.62a5ace63557602ac4f0.PNG",
-    "static/media/Vincent Tjia Resume.pdf": "/react-portfolio-vtjia/static/media/Vincent Tjia Resume.536a147afea8789796ba.pdf",
+    "static/media/devresVT.pdf": "/react-portfolio-vtjia/static/media/devresVT.9764f51f20a495b0ce8c.pdf",
     "static/media/blog_tech.PNG": "/react-portfolio-vtjia/static/media/blog_tech.c7a7a1ed25a76f0c3ff0.PNG",
     "static/media/quiz.PNG": "/react-portfolio-vtjia/static/media/quiz.e9e076b1230b171797d6.PNG",
     "index.html": "/react-portfolio-vtjia/index.html",
-    "main.4664d73f.css.map": "/react-portfolio-vtjia/static/css/main.4664d73f.css.map",
-    "main.cd5cc739.js.map": "/react-portfolio-vtjia/static/js/main.cd5cc739.js.map"
+    "main.ef1c12c6.css.map": "/react-portfolio-vtjia/static/css/main.ef1c12c6.css.map",
+    "main.1b095cf1.js.map": "/react-portfolio-vtjia/static/js/main.1b095cf1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4664d73f.css",
-    "static/js/main.cd5cc739.js"
+    "static/css/main.ef1c12c6.css",
+    "static/js/main.1b095cf1.js"
   ]
 }
