@@ -256,6 +256,7 @@ export default function Portfolio() {
                                     <img
                                       className="w-6/12 md:9/12  flex mx-auto"
                                       src={modalData.image}
+                                      alt={modalData.alt}
                                     />
                                   </div>
                                   {/*footer*/}

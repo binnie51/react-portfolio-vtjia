@@ -92,7 +92,7 @@ const Portfolios = [
     alt: "image of homepage illustration",
     description:
       "The full view of my illustration from the Home page.",
-    deployLink: { homeIllust },
+    deployLink: homeIllust,
     githubLink: "",  
     date: "Jul '22",
   },
@@ -103,7 +103,7 @@ const Portfolios = [
     alt: "image of Brave Killer illustration",
     description:
       "A fanart of Rei and Asuka from Evangelion using a different coloring technique that's more rendered than my usual graphic-style coloring.",
-    deployLink: { reiAsuka },
+    deployLink: reiAsuka ,
     githubLink: "",  
     date: "Jun '23",
   },
@@ -123,7 +123,7 @@ const Portfolios = [
     image: codeOpLogo,
     title: "codeOp app Logo",
     alt: "image of codeOp Logo",
-    deployLink: "./assets/portfolio/Logocodeop.png",
+    deployLink: codeOpLogo,
     githubLink: "",
     description: "A logo graphic I created for the app: codeOp.",
     date: "Jul '22",
