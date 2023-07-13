@@ -83,6 +83,8 @@ const Portfolios = [
     alt: "image of Brave Killer illustration",
     description:
       "A piece that I have submitted to the Digimon Illustration Competition earlier this year based on their preselected Digimon and themed prompt of their unique characteritics.",
+    deployLink: wargreymon,
+    githubLink: "", 
     date: "Jan '23",
   },
   {

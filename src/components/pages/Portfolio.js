@@ -31,7 +31,7 @@ export default function Portfolio() {
       className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20"
       id="portfolios"
     >
-      <section className="w-full h-full  py-16">
+      <section className="w-full h-screen xl:h-screen lg:h-screen md:h-screen sm:h-full xs:h-full py-16">
         <h2 className="work-header uppercase font-bold text-2xl leading-normal"><span className="text-6xl">P</span>ortfolio</h2>
         {/* <p className="text-center text-sm">Select a category to filter:</p> */}
         <div className="flex flex-row gap-4 justify-center pb-4">

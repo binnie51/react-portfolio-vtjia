@@ -35,9 +35,7 @@ export default function ContainerSite() {
     return (
         <div>
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-                <div className='min-h-sceen'>
                     {renderPage()}
-                </div>
             <Footer />
         </div>
     );
