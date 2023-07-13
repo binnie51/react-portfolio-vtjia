@@ -4,7 +4,7 @@ import "./styles/Footer.css";
 
 export default function Footer() {
     return (
-        <footer className="container-fluid relative py-10 bg-gray-900">
+        <footer className="container-fluid  py-10 bg-gray-900">
             <p className="text-center">&copy; Copyrights 2022 Vincent Tjia.</p>
 
             {/* once users all the way at the bottom, click this arrow to scroll back up */}

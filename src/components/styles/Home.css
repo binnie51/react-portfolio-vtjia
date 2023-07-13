@@ -15,25 +15,6 @@ h3 {
     /* background-color: rgba(76, 175, 80, 0.3)  */
 }
 
-/* .greetings {
-    transition-property: ;
-
-} */
-
-/* resume button animation */
-/* .myResumeBtn {
-    color: var(--bg-color);
-    border-radius: 20px;
-    padding: 1rem 1.50rem;
-    font-size: 20px;
-    line-height: 2;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    overflow: hidden;
-    transition:  color 1.5s;
-} */
-
 .myResumeBtn:hover {
     color: #AC976B;
 }
@@ -43,10 +24,6 @@ h3 {
     h1 {
         font-size: 4em;
     }
-
-    /* h2 {
-        font-size: 2em;
-    } */
     
 }
 

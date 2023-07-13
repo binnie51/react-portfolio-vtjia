@@ -8,7 +8,7 @@ import Portfolios from "../../portfolioData";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 export default function Portfolio() {
-  const [portfolios, setPortfolios] = useState(Portfolios); // filter purpose, shows all types by default
+  const [portfolios, setPortfolios] = useState(Portfolios); // filter purpose, shows ALL by default
   const [isOpen, setIsOpen] = useState(false); // open/close modals
 
   // Note: have another state to store the data for modal to avoid opening all modals when details is clicked
@@ -19,7 +19,7 @@ export default function Portfolio() {
     setIsOpen(false);
   }
 
-  const filterContent = (portfolioType) => {
+  const filterPortfolioContent = (portfolioType) => {
     const updatedPageContent = Portfolios.filter((el) => {
       return el.portType === portfolioType;
     });
@@ -28,17 +28,17 @@ export default function Portfolio() {
 
   return (
     <div
-      className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20 pb-10 pt-16"
+      className="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20"
       id="portfolios"
     >
-      <section className="w-full  mb-32">
-        <h2 className="work-header uppercase font-bold text-3xl leading-normal">Portfolio</h2>
+      <section className="w-full h-full  py-16">
+        <h2 className="work-header uppercase font-bold text-2xl leading-normal"><span className="text-6xl">P</span>ortfolio</h2>
         {/* <p className="text-center text-sm">Select a category to filter:</p> */}
         <div className="flex flex-row gap-4 justify-center pb-4">
           <button
             className="relative btnFilter uppercase overflow-hidden  tracking-wider focus:border-b-2 focus:border-amber-600 font-medium rounded text-sm px-3 py-2.5"
             type="button"
-            onClick={() => filterContent("app")}
+            onClick={() => filterPortfolioContent("app")}
           >
             <span className="absolute inset-x-0 h-1 bottom-0 bg-amber-600"></span>
             Apps
@@ -46,7 +46,7 @@ export default function Portfolio() {
           <button
             className="relative btnFilter uppercase overflow-hidden tracking-wider focus:border-b-2 focus:border-amber-600 font-medium rounded text-sm px-3 py-2.5"
             type="button"
-            onClick={() => filterContent("graphic")}
+            onClick={() => filterPortfolioContent("graphic")}
           >
             <span className="absolute inset-x-0 h-1 bottom-0 bg-amber-600"></span>
             Graphics
@@ -54,7 +54,7 @@ export default function Portfolio() {
           <button
             className="relative btnFilter uppercase overflow-hidden  tracking-wider focus:border-b-2 focus:border-amber-600 font-medium rounded text-sm px-3 py-2.5"
             type="button"
-            onClick={() => filterContent("illustration")}
+            onClick={() => filterPortfolioContent("illustration")}
           >
             <span className="absolute inset-x-0 h-1 bottom-0 bg-amber-600"></span>
             Illustrations
@@ -84,7 +84,7 @@ export default function Portfolio() {
                     <h4 className="mb-3 text-xl font-semibold tracking-tight text-white line-clamp">
                       {portfolio.title}
                     </h4>
-                    <p className="leading-normal text-gray-100 line-clamp">
+                    <p className="leading-normal text-gray-100 line-2clamp">
                       {portfolio.description}
                     </p>
                     <button
@@ -168,7 +168,7 @@ export default function Portfolio() {
                                   </div>
                                   {/*Modal body*/}
                                   <div className="relative p-4 overflow-y-auto text-start">
-                                    <p className="my-4 text-cyan-400 text-lg leading-relaxed">
+                                    <p className="my-4 text-cyan-400 text-lg tracking-wide leading-relaxed">
                                       {modalData.description}
                                     </p>
                                   </div>
@@ -221,14 +221,14 @@ export default function Portfolio() {
                             leaveTo="opacity-0 scale-95"
                           >
                             {/* modal starts here */}
-                            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[1055] outline-none focus:outline-none m-4">
+                            <div className="justify-center items-center flex h-full overflow-x-hidden overflow-y-auto fixed inset-0 z-[1055] outline-none focus:outline-none m-4">
                               <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                 {/*content*/}
                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-sky-900/90 outline-none focus:outline-none">
                                   {/*header*/}
                                   <div className="flex items-start justify-between p-5 border-b border-solid border-slate-400 rounded-t">
                                     <h3 className="text-3xl font-bold uppercase text-cyan-400">
-                                      {modalData.title}
+                                      {modalData.title}, ({modalData.date})
                                     </h3>
                                     <div className="flex gap-3 text-3xl text-cyan-400 ml-5">
                                       <a

@@ -7,12 +7,13 @@ import jsQuiz from "./assets/portfolio/quiz.PNG";
 import techBlog from "./assets/portfolio/blog_tech.PNG";
 
 // graphics
-import sq1PamPg1 from "./assets/portfolio/sq1_pam/pg 1, 5-6.png";
-import sq1PamPg2 from "./assets/portfolio/sq1_pam/pg 2-4.png";
 import sq1PamMock from "./assets/portfolio/sq1_pam/mockup_pampSQ1.png";
+import codeOpLogo from "./assets/portfolio/Logocodeop.png";
 
 // illustrations
 import wargreymon from "./assets/portfolio/Wargreymon.jpg";
+import reiAsuka from "./assets/portfolio/Rei_Asuka.png";
+import homeIllust from "./assets/portfolio/Untitled_Artwork.png";
 
 const Portfolios = [
   {
@@ -82,7 +83,29 @@ const Portfolios = [
     alt: "image of Brave Killer illustration",
     description:
       "A piece that I have submitted to the Digimon Illustration Competition earlier this year based on their preselected Digimon and themed prompt of their unique characteritics.",
-    date: "January 2023",
+    date: "Jan '23",
+  },
+  {
+    portType: "illustration",
+    image: homeIllust,
+    title: "Homepage Illustration",
+    alt: "image of homepage illustration",
+    description:
+      "The full view of my illustration from the Home page.",
+    deployLink: { homeIllust },
+    githubLink: "",  
+    date: "Jul '22",
+  },
+  {
+    portType: "illustration",
+    image: reiAsuka,
+    title: "Evangelion Fanart",
+    alt: "image of Brave Killer illustration",
+    description:
+      "A fanart of Rei and Asuka from Evangelion using a different coloring technique that's more rendered than my usual graphic-style coloring.",
+    deployLink: { reiAsuka },
+    githubLink: "",  
+    date: "Jun '23",
   },
   {
     portType: "graphic",
@@ -93,7 +116,17 @@ const Portfolios = [
       "https://www.canva.com/design/DAFaygxwVHk/FJLjIS8ULS-jaYHCJP39hA/view?utm_content=DAFaygxwVHk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     githubLink: "",
     description: "A trifold pamphlete designed to introduce Square One Church.",
-    date: "February 2023",
+    date: "Feb '23",
+  },
+  {
+    portType: "graphic",
+    image: codeOpLogo,
+    title: "codeOp app Logo",
+    alt: "image of codeOp Logo",
+    deployLink: "./assets/portfolio/Logocodeop.png",
+    githubLink: "",
+    description: "A logo graphic I created for the app: codeOp.",
+    date: "Jul '22",
   },
 ];
 

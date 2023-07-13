@@ -32,8 +32,8 @@ export default function Contact() {
   return (
     <section className="my-16 mx-5">
       <div className="text-center">
-        <h1 className="font-bold text-3xl contact-header justify-center uppercase mb-6">
-          Contact Me
+        <h1 className="font-bold text-2xl contact-header justify-center uppercase mb-6">
+          <span className="text-5xl">C</span>ontact Me
         </h1>
       </div>
       <div className="flex flex-wrap py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -74,9 +74,9 @@ export default function Contact() {
                 className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
                 border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
                 focus:border-blue-600 focus:outline-none"
-                id="exampleInput7"
+                id=""
                 placeholder="Name"
-                name="user_name"
+                name="from_name"
               />
             </div>
             <div className="form-group mb-6">
@@ -85,7 +85,7 @@ export default function Contact() {
                 className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding
                 border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
                 focus:border-blue-600 focus:outline-none"
-                id="exampleInput8"
+                id=""
                 placeholder="Email address"
                 name="user_email"
               />

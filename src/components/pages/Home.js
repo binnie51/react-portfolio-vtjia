@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 import image from "../../assets/illust_top.png";
-import resume from "../../assets/Vincent Tjia Resume.pdf";
+import resume from "../../assets/devresVT.pdf";
 import { useCallback, useEffect, useState } from "react";
 import { FaGithubSquare, FaMailBulk, FaInstagramSquare } from "react-icons/fa";
 
@@ -34,7 +34,7 @@ export default function Home() {
             <div
               className="max-w-xl text-start ltr:sm:text-left rtl:sm:text-right rounded px-6 py-12 md:py-16 md:px-12 hero-text"
               style={{
-                background: "hsla(0, 0%, 100%, 0.5)",
+                background: "hsla(0, 0%, 100%, 0.6)",
                 backdropFilter: "blur(2px)",
               }}
             >
@@ -50,7 +50,7 @@ export default function Home() {
                 <strong className="text-">Web Developer</strong>, Designer,
                 Illustrator
               </h2>
-              <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+              <p className="tracking-wide font-semibold mt-4 max-w-lg sm:text-xl/relaxed">
                 An amateur developer who provides services for web design and
                 content catering toward business and organization needs. Also,
                 an illustrator and graphic designer on the side.
@@ -78,7 +78,7 @@ export default function Home() {
                     <FaGithubSquare />
                   </a>
                 </div>
-                <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600">
+                <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-600 cursor-pointer">
                   <a
                     onClick={() =>
                       (window.location = "mailto:vtjia51@gmail.com")

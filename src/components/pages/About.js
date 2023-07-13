@@ -9,8 +9,8 @@ export default function About() {
   return (
     <div className="container-fluid flex justify-center">
       <div className="about-container px-16 py-16">
-        <h2 className="heading-about uppercase text-center font-bold mb-4">
-          About Me
+        <h2 className="heading-about uppercase text-center text-2xl font-bold mb-4">
+          <span className="a-cap mb-3 text-5xl">A</span>bout Me
         </h2>
         <div className="grid gap-10 lg:grid-cols-2 md:grid-cols-1 pb-5">
           <div className="overlay">

@@ -41,7 +41,6 @@
     position: relative;
     margin: 10px 0px 40px;
     width: 100%;
-    font-size: 25px;
     letter-spacing: .1rem;
 }
 
@@ -50,7 +49,7 @@
     display: block;
     position: relative;
     top: 20px;
-    width: 25%;
+    width: 30%;
     height: 1px;
     margin-right: 10px;
     background-color: white;
@@ -92,6 +91,11 @@
         height: 1px;
         background-color: white;
     }
+}
+
+.a-cap {
+    bottom: 10px;
+    position: relative;
 }
 
 @media screen and (max-width: 576px) {
